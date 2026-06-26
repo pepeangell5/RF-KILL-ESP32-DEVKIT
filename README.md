@@ -251,13 +251,6 @@ El archivo `manifest.json` apunta a:
 }
 ```
 
-Para publicarlo:
-
-1. Sube el repositorio a [pepeangell5/RF-KILL](https://github.com/pepeangell5/RF-KILL).
-2. En GitHub, entra a **Settings > Pages**.
-3. Selecciona la rama principal y la carpeta raiz.
-4. Guarda los cambios.
-5. Abre `https://pepeangell5.github.io/RF-KILL/`.
 
 [Regresar al indice](#indice)
 
