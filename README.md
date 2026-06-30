@@ -219,7 +219,7 @@ Tambien puedes flashear manualmente con los binarios incluidos:
 
 ```bash
 esptool.py --chip esp32 --baud 460800 write_flash -z \
-  0x0000 binarios/bootloader.bin \
+  0x1000 binarios/bootloader.bin \
   0x8000 binarios/partitions.bin \
   0xe000 binarios/boot_app0.bin \
   0x10000 binarios/firmware.bin
@@ -229,7 +229,7 @@ Offsets usados por el Web Flasher:
 
 | Archivo | Offset |
 | --- | ---: |
-| `bootloader.bin` | `0x0000` |
+| `bootloader.bin` | `0x1000` |
 | `partitions.bin` | `0x8000` |
 | `boot_app0.bin` | `0xe000` |
 | `firmware.bin` | `0x10000` |
@@ -244,7 +244,7 @@ El archivo `manifest.json` apunta a:
 {
   "chipFamily": "ESP32",
   "parts": [
-    { "path": "binarios/bootloader.bin", "offset": 0 },
+    { "path": "binarios/bootloader.bin", "offset": 4096 },
     { "path": "binarios/partitions.bin", "offset": 32768 },
     { "path": "binarios/boot_app0.bin", "offset": 57344 },
     { "path": "binarios/firmware.bin", "offset": 65536 }
