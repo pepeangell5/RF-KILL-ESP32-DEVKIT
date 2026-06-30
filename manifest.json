@@ -1,11 +1,11 @@
 {
-  "name": "RF-KILL ESP32-C3",
+  "name": "RF-KILL ESP32-WROOM DevKit",
   "version": "1.0.0",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": true,
   "builds": [
     {
-      "chipFamily": "ESP32-C3",
+      "chipFamily": "ESP32",
       "parts": [
         { "path": "binarios/bootloader.bin", "offset": 0 },
         { "path": "binarios/partitions.bin", "offset": 32768 },

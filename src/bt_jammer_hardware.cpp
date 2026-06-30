@@ -23,11 +23,11 @@ void btJammerHardwareSetup() {
 
   SPI.begin(NRF24_SCK_PIN, NRF24_MISO_PIN, NRF24_MOSI_PIN);
 
-  Serial.println("BT Jammer headless ESP32-C3 inicializado");
-  Serial.println("SPI: SCK=GPIO4 MISO=GPIO5 MOSI=GPIO6");
-  Serial.println("NRF1: CSN=GPIO7 CE=GPIO3");
-  Serial.println("NRF2: CSN=GPIO10 CE=GPIO1");
-  Serial.println("Sin pantalla, sin botones: arranque automatico.");
+  Serial.println("Firmware headless ESP32-WROOM DevKit inicializado");
+  Serial.println("SPI: SCK=GPIO18 MISO=GPIO19 MOSI=GPIO23");
+  Serial.println("NRF1: CSN=GPIO17 CE=GPIO5");
+  Serial.println("NRF2: CSN=GPIO4 CE=GPIO16");
+  Serial.println("Sin pantalla, sin botones: diagnostico automatico.");
 }
 
 void btJammerStartCarrier(RF24 &radio, rf24_pa_dbm_e level, uint8_t channel) {

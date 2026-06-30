@@ -1,30 +1,30 @@
-# Pinout ESP32-C3 SuperMini con 2 nRF24L01+
+# Pinout ESP32-WROOM DevKit con 2 nRF24L01+
 
-Este pinout corresponde al firmware de diagnostico en `src/nrf24_diagnostics.cpp`.
+Este pinout corresponde al firmware configurado en `include/hardware_pins.h`.
 
 ## Bus SPI compartido
 
-| nRF24L01+ | ESP32-C3 SuperMini |
+| nRF24L01+ | ESP32-WROOM DevKit |
 | --- | --- |
 | VCC | 3V3 |
 | GND | GND |
-| SCK | GPIO4 |
-| MISO | GPIO5 |
-| MOSI | GPIO6 |
+| SCK | GPIO18 |
+| MISO | GPIO19 |
+| MOSI | GPIO23 |
 
 ## nRF24 #1
 
-| nRF24L01+ | ESP32-C3 SuperMini |
+| nRF24L01+ | ESP32-WROOM DevKit |
 | --- | --- |
-| CSN | GPIO7 |
-| CE | GPIO3 |
+| CSN | GPIO17 |
+| CE | GPIO5 |
 
 ## nRF24 #2
 
-| nRF24L01+ | ESP32-C3 SuperMini |
+| nRF24L01+ | ESP32-WROOM DevKit |
 | --- | --- |
-| CSN | GPIO10 |
-| CE | GPIO1 |
+| CSN | GPIO4 |
+| CE | GPIO16 |
 
 ## Notas de alimentacion
 
@@ -38,6 +38,6 @@ Este pinout corresponde al firmware de diagnostico en `src/nrf24_diagnostics.cpp
 Con ambos modulos conectados correctamente debe aparecer:
 
 ```text
-RESULTADO: ambos nRF24 responden por SPI.
-Estado: nRF24 #1=OK | nRF24 #2=OK
+nRF24 #1: OK
+nRF24 #2: OK
 ```

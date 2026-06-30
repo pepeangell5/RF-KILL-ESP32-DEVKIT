@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RF-KILL ESP32-C3 Web Flasher</title>
-  <meta name="description" content="Web Flasher para RF-KILL ESP32-C3.">
+  <title>RF-KILL ESP32-WROOM DevKit Web Flasher</title>
+  <meta name="description" content="Web Flasher para RF-KILL ESP32-WROOM DevKit.">
   <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
   <style>
     :root {
@@ -70,7 +70,7 @@
       padding: 32px;
       background:
         linear-gradient(90deg, rgba(7, 9, 12, 0.92), rgba(7, 9, 12, 0.66), rgba(7, 9, 12, 0.9)),
-        url("img/BT-KILL.JPG") center / cover no-repeat;
+        url("img/conexiones-devkit.jpg") center / cover no-repeat;
       border-bottom: 1px solid var(--line);
     }
 
@@ -339,14 +339,14 @@
 <body>
   <section class="hero">
     <div class="hero-inner">
-      <div class="status mono"><span class="dot"></span>ESP32-C3 SuperMini // RF-KILL</div>
+      <div class="status mono"><span class="dot"></span>ESP32-WROOM DevKit // RF-KILL</div>
       <h1>Web Flasher</h1>
-      <p class="subtitle">Carga el firmware del proyecto directamente desde el navegador. Conecta la placa por USB, selecciona el puerto serial y deja que el instalador escriba los binarios preparados para el ESP32-C3.</p>
+      <p class="subtitle">Carga el firmware del proyecto directamente desde el navegador. Conecta la placa por USB, selecciona el puerto serial y deja que el instalador escriba los binarios preparados para el ESP32-WROOM DevKit.</p>
       <div class="install-row">
         <esp-web-install-button manifest="manifest.json">
           <button slot="activate">Instalar firmware</button>
         </esp-web-install-button>
-        <div class="hint mono">STATUS: READY // BAUD: 115200 // TARGET: ESP32-C3</div>
+        <div class="hint mono">STATUS: READY // BAUD: 115200 // TARGET: ESP32</div>
       </div>
     </div>
   </section>
@@ -358,7 +358,7 @@
         <ul>
           <li>Usa Chrome o Edge de escritorio.</li>
           <li>Conecta un cable USB de datos.</li>
-          <li>Selecciona el puerto del ESP32-C3.</li>
+          <li>Selecciona el puerto del ESP32.</li>
         </ul>
       </div>
 
@@ -380,17 +380,17 @@
     <section class="wide">
       <div class="wide-content">
         <div class="terminal-title mono"><span>DEVICE_MAP</span><span>2x NRF24L01+</span></div>
-        <p>El montaje usa dos radios nRF24L01+ sobre un bus SPI compartido. Cada modulo conserva sus pines CE y CSN independientes para control desde el ESP32-C3 SuperMini.</p>
-        <div class="command mono">SCK=GPIO4 // MISO=GPIO5 // MOSI=GPIO6 // CE1=GPIO3 // CSN1=GPIO7 // CE2=GPIO1 // CSN2=GPIO10</div>
+        <p>El montaje usa dos radios nRF24L01+ sobre un bus SPI compartido. Cada modulo conserva sus pines CE y CSN independientes para control desde el ESP32-WROOM DevKit.</p>
+        <div class="command mono">SCK=GPIO18 // MISO=GPIO19 // MOSI=GPIO23 // CE1=GPIO5 // CSN1=GPIO17 // CE2=GPIO16 // CSN2=GPIO4</div>
       </div>
-      <img src="img/2NRF24.png" alt="Dos modulos nRF24L01+ conectados al proyecto RF-KILL">
+      <img src="img/conexiones-devkit.jpg" alt="Conexiones ESP32-WROOM DevKit con dos nRF24L01+">
     </section>
 
     <section class="gallery" aria-label="Galeria del dispositivo">
-      <img src="img/BT-KILL2.JPG" alt="Montaje RF-KILL con ESP32-C3 vista lateral">
-      <img src="img/BT-KILL3.JPG" alt="Montaje RF-KILL con modulos nRF24">
-      <img src="img/BT-KILL-RUIDO.JPG" alt="Prueba visual RF-KILL ruido 1">
-      <img src="img/BT-KILL-RUIDO2.JPG" alt="Prueba visual RF-KILL ruido 2">
+      <img src="img/conexiones-devkit.jpg" alt="Diagrama de conexiones ESP32-WROOM DevKit">
+      <img src="img/esp32U.png" alt="ESP32-WROOM DevKit">
+      <img src="img/2NRF24.png" alt="Dos modulos nRF24L01+">
+      <img src="img/NRF24.png" alt="Modulo nRF24L01+">
     </section>
 
     <section class="socials" aria-label="Redes sociales">
@@ -413,8 +413,8 @@
     </section>
 
     <footer>
-      <span class="mono">RF-KILL // ESP32-C3 // WEB FLASHER</span>
-      <a href="https://github.com/pepeangell5/RF-KILL" target="_blank" rel="noopener noreferrer">github.com/pepeangell5/RF-KILL</a>
+      <span class="mono">RF-KILL // ESP32-WROOM DEVKIT // WEB FLASHER</span>
+      <a href="https://github.com/pepeangell5/RF-KILL-ESP32-DEVKIT" target="_blank" rel="noopener noreferrer">github.com/pepeangell5/RF-KILL-ESP32-DEVKIT</a>
     </footer>
   </main>
 </body>
