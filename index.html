@@ -343,7 +343,7 @@
       <h1>Web Flasher</h1>
       <p class="subtitle">Carga el firmware del proyecto directamente desde el navegador. Conecta la placa por USB, selecciona el puerto serial y deja que el instalador escriba los binarios preparados para el ESP32-WROOM DevKit.</p>
       <div class="install-row">
-        <esp-web-install-button manifest="manifest.json">
+        <esp-web-install-button manifest="manifest.json?v=2">
           <button slot="activate">Instalar firmware</button>
         </esp-web-install-button>
         <div class="hint mono">STATUS: READY // BAUD: 115200 // TARGET: ESP32</div>
@@ -365,9 +365,9 @@
       <div class="terminal">
         <div class="terminal-title mono"><span>02_FLASH</span><span>BIN</span></div>
         <ul>
-          <li><code>bootloader.bin</code> en <code>0x1000</code>.</li>
-          <li><code>partitions.bin</code> en <code>0x8000</code>.</li>
-          <li><code>firmware.bin</code> en <code>0x10000</code>.</li>
+          <li><code>rf-kill-esp32-devkit-web-v2.bin</code>.</li>
+          <li>Imagen combinada lista para <code>0x0</code>.</li>
+          <li>Incluye bootloader, particiones y firmware.</li>
         </ul>
       </div>
 

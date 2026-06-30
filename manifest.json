@@ -1,16 +1,13 @@
 {
   "name": "RF-KILL ESP32-WROOM DevKit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": true,
   "builds": [
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "binarios/bootloader.bin", "offset": 4096 },
-        { "path": "binarios/partitions.bin", "offset": 32768 },
-        { "path": "binarios/boot_app0.bin", "offset": 57344 },
-        { "path": "binarios/firmware.bin", "offset": 65536 }
+        { "path": "binarios/rf-kill-esp32-devkit-web-v2.bin", "offset": 0 }
       ]
     }
   ]

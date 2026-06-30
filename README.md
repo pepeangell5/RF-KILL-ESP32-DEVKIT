@@ -122,7 +122,8 @@ flowchart LR
 |   |-- boot_app0.bin
 |   |-- bootloader.bin
 |   |-- firmware.bin
-|   `-- partitions.bin
+|   |-- partitions.bin
+|   `-- rf-kill-esp32-devkit-web-v2.bin
 |-- include/
 |   |-- bt_jammer.h
 |   |-- bt_jammer_hardware.h
@@ -229,10 +230,7 @@ Offsets usados por el Web Flasher:
 
 | Archivo | Offset |
 | --- | ---: |
-| `bootloader.bin` | `0x1000` |
-| `partitions.bin` | `0x8000` |
-| `boot_app0.bin` | `0xe000` |
-| `firmware.bin` | `0x10000` |
+| `rf-kill-esp32-devkit-web-v2.bin` | `0x0` |
 
 [Regresar al indice](#indice)
 
@@ -244,10 +242,7 @@ El archivo `manifest.json` apunta a:
 {
   "chipFamily": "ESP32",
   "parts": [
-    { "path": "binarios/bootloader.bin", "offset": 4096 },
-    { "path": "binarios/partitions.bin", "offset": 32768 },
-    { "path": "binarios/boot_app0.bin", "offset": 57344 },
-    { "path": "binarios/firmware.bin", "offset": 65536 }
+    { "path": "binarios/rf-kill-esp32-devkit-web-v2.bin", "offset": 0 }
   ]
 }
 ```
