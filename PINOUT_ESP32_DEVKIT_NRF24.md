@@ -1,6 +1,6 @@
 # Pinout ESP32-WROOM DevKit con 2 nRF24L01+
 
-Este pinout corresponde al firmware configurado en `include/hardware_pins.h`.
+Este pinout corresponde al firmware configurado en `src/main.cpp` y en `RF-KILL-Para arduino IDE/RF-KILL.ino`.
 
 ## Bus SPI compartido
 

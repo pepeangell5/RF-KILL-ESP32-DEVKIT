@@ -1,4 +1,3 @@
-#include <Arduino.h>
 #include <RF24.h>
 #include <SPI.h>
 #include <esp_bt.h>
@@ -76,4 +75,5 @@ void setup() {
 void loop() {
   channelSweeper();
   randomChannel();
+
 }
