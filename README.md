@@ -22,6 +22,7 @@ Proyecto de tesis basado en un ESP32-WROOM DevKit y dos modulos nRF24L01+ conect
 - [Binarios Y Web Flasher](#binarios-y-web-flasher)
 - [Galeria](#galeria)
 - [Solucion De Problemas](#solucion-de-problemas)
+- [Redes Sociales](#redes-sociales)
 - [Agradecimientos](#agradecimientos)
 - [Licencia](#licencia)
 
@@ -223,6 +224,10 @@ El archivo `manifest.json` esta preparado para que el Web Flasher use una imagen
 
 El archivo `index.html` contiene la interfaz del Web Flasher basada en `esp-web-tools`. Para que funcione desde GitHub Pages, deben existir `manifest.json` y los archivos dentro de `binarios/` en el repositorio publicado.
 
+Web Flasher publicado:
+
+[https://pepeangell5.github.io/RF-KILL-ESP32-DEVKIT/](https://pepeangell5.github.io/RF-KILL-ESP32-DEVKIT/)
+
 [Regresar al indice](#indice)
 
 ## Galeria
@@ -250,6 +255,17 @@ El archivo `index.html` contiene la interfaz del Web Flasher basada en `esp-web-
 | nRF24 no responde | Revisa 3V3, GND comun, MISO/MOSI y capacitores. |
 | Reinicios al arrancar | Usa alimentacion estable y capacitores cerca de cada nRF24. |
 | Web Flasher no descarga binarios | Verifica que `binarios/` y `manifest.json` esten publicados. |
+
+[Regresar al indice](#indice)
+
+## Redes Sociales
+
+| Red | Enlace |
+| --- | --- |
+| Facebook | <a href="https://www.facebook.com/esp32-tools" target="_blank" rel="noopener noreferrer">esp32-tools</a> |
+| Instagram | <a href="https://www.instagram.com/pepeangelll/" target="_blank" rel="noopener noreferrer">pepeangelll</a> |
+| YouTube | <a href="https://www.youtube.com/@esp32-tools" target="_blank" rel="noopener noreferrer">esp32-tools</a> |
+| Pagina web | <a href="https://pepeangell.dev" target="_blank" rel="noopener noreferrer">pepeangell.dev</a> |
 
 [Regresar al indice](#indice)
 
